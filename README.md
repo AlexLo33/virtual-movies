@@ -1,6 +1,24 @@
-# Getting Started with Create React App
+# Virtual Movies
+
+This project is about listing some movies from [The Movie DB](https://www.themoviedb.org/).
+
+The Movie Database API is available [here](https://developers.themoviedb.org/3/getting-started/introduction)
+
+You can search a movie by its name in the search bar in the header.
+
+You can click on a movie to see more details about it.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Framework / Libraries / Packages used
+
+* [MUI](https://mui.com/) : UI library for the design    
+* [Redux JS](https://redux.js.org/) : The state container
+* [Axios](https://axios-http.com/docs/intro) : Promise-based HTTP client to handle API calls
+* [Moment JS](https://momentjs.com/) : Parsing and formating dates
+* [React Router](https://reactrouter.com/) : Handle Routing
+* [Redux DevTools Extension](https://github.com/reduxjs/redux-devtools/) : Developer Tools to power-up Redux development workflow
+* [SASS](https://sass-lang.com/) : Powerfull CSS implementation
 
 ## Available Scripts
 
@@ -29,18 +47,12 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## What's up next
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Some improvements can be developed for better User Experience : 
+* Display more movies, with a lazy loading to load page by page the movies from the API
+* Add more filters (ex: by popularity, by release date, etc...)
+* Add an icon to clear the search input (like a cross)
+* Responsive Design (for mobile or tablet)
+* Test React components
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

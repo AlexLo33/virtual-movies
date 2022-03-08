@@ -1,0 +1,40 @@
+.Movie {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  height: 335px;
+  margin: 0 4% 50px;
+  color: #fff;
+  cursor: pointer;
+
+  img {
+    height: 275px;
+    border-radius: 10px;
+  }
+
+  .vote-average {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 65px;
+    height: 25px;
+    background-color: rgba($color: #000000, $alpha: .6);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 12px;
+  }
+
+  .title {
+    margin: 10px 0;
+    padding-left: 5px;
+  }
+
+  .first-air {
+    padding-left: 5px;
+    font-size: 12px;
+    color: #919191;
+  }
+}

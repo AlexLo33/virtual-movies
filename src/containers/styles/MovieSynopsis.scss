@@ -1,0 +1,56 @@
+.MovieSynopsis {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  min-width: 45%;
+  height: auto;
+  background-color: #0c0b10;
+  color: #fff;
+  border-top-left-radius: 15px;
+  overflow: hidden;
+
+  &.empty {
+    display: none;
+  }
+
+  .close-synopsis {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background-color: rgba($color: #000000, $alpha: .4);
+    border-bottom-left-radius: 100%;
+    cursor: pointer;
+  }
+
+  > .content {
+    padding: 50px 60px;
+
+    .title {
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .infos {
+      display: flex;
+      justify-content: space-between;
+      width: 130px;
+      margin-bottom: 20px;
+
+      .rating {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .description {
+      line-height: 30px;
+    }
+  }
+}

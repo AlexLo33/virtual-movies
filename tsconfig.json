@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "type.d.ts", "test/movies.spec.ts", "test/movie.spec.ts"  ]
 }

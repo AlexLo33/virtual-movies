@@ -1,0 +1,18 @@
+.Main {
+  flex-grow: 1;
+  padding: 50px 0;
+  background: radial-gradient(circle, rgba(95,128,129,1) 0%, rgba(32,34,38,1) 80%);
+  font-family: 'Roboto Mono', monospace;
+
+  h1 {
+    margin: 0 0 50px 80px;
+    color: #fff;
+    font-size: 36px;
+    font-style: italic;
+  }
+
+  > .content {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
