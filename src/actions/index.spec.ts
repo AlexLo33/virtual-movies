@@ -60,6 +60,7 @@ describe('Actions', () => {
     const movies = [{ id: 1234, title: 'Movie test' } as IMovie];
     const expectedActions = [
       { type: ActionTypes.SEARCH_MOVIE, query: '' },
+      { type: ActionTypes.CLEAN_SEARCH_MOVIE },
       { type: ActionTypes.FETCH_MOVIES__START },
       { type: ActionTypes.CLEAR_SELECT_MOVIE },
       { type: ActionTypes.FETCH_MOVIES__SUCCESS, movies },

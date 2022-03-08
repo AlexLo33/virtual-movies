@@ -10,6 +10,10 @@ const startSearchMovie = (query: string) => ({
   query,
 });
 
+const cleanSearchMovie = () => ({
+  type: ActionTypes.CLEAN_SEARCH_MOVIE,
+});
+
 const startFetchMovie = () => ({
   type: ActionTypes.FETCH_MOVIES__START,
 });
@@ -48,6 +52,7 @@ export const searchMovie = (query: string): ThunkAction<Promise<void>, {}, {}, A
     dispatch(startSearchMovie(query));
     if (query.length === 0) {
       // Input is cleaned
+      dispatch(cleanSearchMovie());
       await dispatch(fetchMovies());
     } else {
       try {

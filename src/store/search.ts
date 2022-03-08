@@ -11,6 +11,8 @@ const searchReducer = (
   switch (action.type) {
     case ActionTypes.SEARCH_MOVIE:
       return { query: action.query };
+    case ActionTypes.CLEAN_SEARCH_MOVIE:
+      return {...initialState };
   }
   return state;
 };

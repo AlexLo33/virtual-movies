@@ -9,9 +9,7 @@ describe('Search Reducer', () => {
 
     const state = searchReducer(undefined, emptyAction);
 
-    expect(state).toEqual({
-      query: '',
-    });
+    expect(state).toEqual({ query: '' });
   });
 
   test('When called with SEARCH_MOVIE Then it should set the query string', () => {
@@ -23,5 +21,18 @@ describe('Search Reducer', () => {
     const state = searchReducer(undefined, action);
 
     expect(state).toEqual({ query: action.query });
+  });
+
+  test('When called with CLEAN_SEARCH_MOVIE Then it should returns initial state', () => {
+    const currentState = {
+      query: 'Mov',
+    };
+    const action = {
+      type: ActionTypes.CLEAN_SEARCH_MOVIE,
+    } as AnyAction;
+
+    const state = searchReducer(currentState, action);
+
+    expect(state).toEqual({ query: '' });
   });
 });
