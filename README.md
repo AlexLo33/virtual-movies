@@ -19,6 +19,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * [React Router](https://reactrouter.com/) : Handle Routing
 * [Redux DevTools Extension](https://github.com/reduxjs/redux-devtools/) : Developer Tools to power-up Redux development workflow
 * [SASS](https://sass-lang.com/) : Powerfull CSS implementation
+* [Jest](https://jestjs.io/fr/) : Unit tests (reducers, actions, ...)
+* [Axios Mock Adapter](https://github.com/ctimmerm/axios-mock-adapter) : Mock Axios for Unit tests
+* [Redux Mock Store](https://github.com/reduxjs/redux-mock-store) : A mock store for testing Redux async action creators and middleware.
 
 ## Available Scripts
 
